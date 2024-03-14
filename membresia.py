@@ -48,6 +48,7 @@ class MembresiaBasica(Membresia):
     
     def __init__(self, correo_suscriptor: str, num_tarjeta: str) -> None:
         super().__init__(correo_suscriptor, num_tarjeta)
+        #isinstance no funcionó :( pero es tip, no requerimiento, así que se asigna en las clases que corresponda
         '''
         if isinstance(self, MembresiaFamiliar) or isinstance(self, MembresiaSinConexion):
             self.dias_regalo = 7
