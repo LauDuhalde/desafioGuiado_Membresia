@@ -54,6 +54,15 @@ class MembresiaBasica(Membresia):
             self.dias_regalo = 7
         elif isinstance(self,MembresiaPro):
             self.dias_regalo = 15'''
+            
+        '''
+        Respuesta de ChatGPT xD
+        Si MembresiaPro hereda de MembresiaFamiliar y MembresiaSinConexion, 
+        entonces es importante tener en cuenta que cualquier instancia de MembresiaPro 
+        también será una instancia de MembresiaFamiliar y MembresiaSinConexion. 
+        Esto significa que al verificar la instancia, si una instancia es de tipo MembresiaPro, 
+        también será de tipo MembresiaFamiliar y MembresiaSinConexion.
+        '''
     
     def cancelar_suscripcion(self):
         return MembresiaGratis(self.correo_suscriptor, self.numero_tarjeta)
